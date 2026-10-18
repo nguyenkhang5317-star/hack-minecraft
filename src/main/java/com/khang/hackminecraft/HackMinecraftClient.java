@@ -41,6 +41,7 @@ public final class HackMinecraftClient implements ClientModInitializer {
         registerToggle("COORDS_HUD", GLFW.GLFW_KEY_U);
         registerToggle("DURABILITY_HUD", GLFW.GLFW_KEY_D);
         registerToggle("PERFORMANCE_HUD", GLFW.GLFW_KEY_F);
+        registerToggle("PING_HUD", GLFW.GLFW_KEY_N);
         registerToggle("ANTI_AFK", GLFW.GLFW_KEY_Y);
         ClientTickEvents.END_CLIENT_TICK.register(this::onClientTick);
         HudRenderCallback.EVENT.register((drawContext, tickCounter) -> renderHud(drawContext));
@@ -203,6 +204,14 @@ public final class HackMinecraftClient implements ClientModInitializer {
                         6, y, percent <= 20 ? 0xFF5555 : 0x55FF55);
                 y += 12;
             }
+        }
+
+        if (enabled("PING_HUD")) {
+            var networkHandler = client.getNetworkHandler();
+            var playerListEntry = networkHandler == null ? null : networkHandler.getPlayerListEntry(client.player.getUuid());
+            int latency = playerListEntry == null ? -1 : playerListEntry.getLatency();
+            drawContext.drawTextWithShadow(client.textRenderer, "Ping: " + (latency < 0 ? "N/A" : latency + " ms"), 6, y, 0x55FFFF);
+            y += 12;
         }
 
         if (enabled("PERFORMANCE_HUD")) {
