@@ -1,9 +1,18 @@
-plugins { id 'fabric-loom' version '1.9-SNAPSHOT' }
+plugins {
+    id 'fabric-loom' version '1.9-SNAPSHOT'
+}
 
 version = '1.0.0'
 group = 'com.khang'
 
-repositories { mavenCentral() }
+base {
+    archivesName = 'hack-minecraft-fabric-1.21.1'
+}
+
+repositories {
+    maven { url = 'https://maven.fabricmc.net/' }
+    mavenCentral()
+}
 
 dependencies {
     minecraft 'com.mojang:minecraft:1.21.1'
@@ -12,4 +21,21 @@ dependencies {
     modImplementation 'net.fabricmc.fabric-api:fabric-api:0.102.1+1.21.1'
 }
 
-java { toolchain { languageVersion = JavaLanguageVersion.of(21) } }
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
