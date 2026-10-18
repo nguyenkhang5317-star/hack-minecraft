@@ -26,4 +26,4 @@ Change keys in Minecraft: Options > Controls > Key Binds > Hack Minecraft.
 3. Open the successful workflow run and download the `hack-minecraft-fabric-1.21.1` artifact.
 4. Put the JAR into the Minecraft 1.21.1 `mods` folder with Fabric Loader and Fabric API installed.
 
-The workflow installs Java 21 for the build; the JDK itself is not committed to the repository. This project focuses on utility and HUD features and does not include combat automation or anti-cheat bypass code.
+The workflow installs Java 21 for the build; the JDK itself is not committed to the repository. This project focuses on utility and HUD features and does not include automated crystal or anchor attacks, automatic attack targeting, or anti-cheat bypass code.
