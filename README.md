@@ -15,6 +15,7 @@ Fabric client utility mod for Minecraft Java Edition 1.21.1. The automated build
 | Coordinates and world-time HUD | U |
 | Armor durability HUD | D |
 | FPS, food and health HUD | F |
+| Ping HUD | N |
 | Anti-AFK jump | Y |
 
 Change keys in Minecraft: Options > Controls > Key Binds > Hack Minecraft.
