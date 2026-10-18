@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "hack_minecraft",
+  "version": "${version}",
+  "name": "Hack Minecraft",
+  "description": "Minecraft 1.21.1 client utility and combat automation mod.",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.khang.hackminecraft.HackMinecraftClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
