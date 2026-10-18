@@ -9,5 +9,6 @@
   "key.hackminecraft.coords_hud": "Toggle Coordinates HUD",
   "key.hackminecraft.durability_hud": "Toggle Armor Durability HUD",
   "key.hackminecraft.performance_hud": "Toggle Performance HUD",
+  "key.hackminecraft.ping_hud": "Toggle Ping HUD",
   "key.hackminecraft.anti_afk": "Toggle Anti-AFK"
 }
