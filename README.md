@@ -1,23 +1,20 @@
 # Hack Minecraft
 
-Fabric client mod for Minecraft Java Edition 1.21.1. The automated build installs Temurin Java 21 and produces a JAR through GitHub Actions.
+Fabric client utility mod for Minecraft Java Edition 1.21.1. The automated build installs Temurin Java 21 and creates the mod JAR through GitHub Actions.
 
 ## Features and default keys
 
 | Feature | Key |
 | --- | --- |
-| ESP entity boxes | O |
-| Tracers | T |
 | Auto Totem | P |
-| Auto Crystal | K |
-| Auto Anchor | J |
 | Fullbright gamma setting | L |
 | Auto Sprint | G |
 | Auto Eat | H |
 | Auto Tool | I |
-| Triggerbot | B |
 | Auto Respawn | R |
-| Coordinates and player radar HUD | U |
+| Coordinates and world-time HUD | U |
+| Armor durability HUD | D |
+| FPS, food and health HUD | F |
 | Anti-AFK jump | Y |
 
 Change keys in Minecraft: Options > Controls > Key Binds > Hack Minecraft.
@@ -29,6 +26,4 @@ Change keys in Minecraft: Options > Controls > Key Binds > Hack Minecraft.
 3. Open the successful workflow run and download the `hack-minecraft-fabric-1.21.1` artifact.
 4. Put the JAR into the Minecraft 1.21.1 `mods` folder with Fabric Loader and Fabric API installed.
 
-The workflow installs Java 21 for the build; the JDK itself is not committed to the repository.
-
-This project does not include anti-cheat bypass or stealth-evasion code. Use client automation only where permitted by the world or server rules.
+The workflow installs Java 21 for the build; the JDK itself is not committed to the repository. This project focuses on utility and HUD features and does not include combat automation or anti-cheat bypass code.
