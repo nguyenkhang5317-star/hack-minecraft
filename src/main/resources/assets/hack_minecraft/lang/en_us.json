@@ -1,0 +1,16 @@
+{
+  "category.hackminecraft": "Hack Minecraft",
+  "key.hackminecraft.esp": "Toggle ESP",
+  "key.hackminecraft.tracers": "Toggle Tracers",
+  "key.hackminecraft.auto_totem": "Toggle Auto Totem",
+  "key.hackminecraft.auto_crystal": "Toggle Auto Crystal",
+  "key.hackminecraft.auto_anchor": "Toggle Auto Anchor",
+  "key.hackminecraft.fullbright": "Toggle Fullbright",
+  "key.hackminecraft.auto_sprint": "Toggle Auto Sprint",
+  "key.hackminecraft.auto_eat": "Toggle Auto Eat",
+  "key.hackminecraft.auto_tool": "Toggle Auto Tool",
+  "key.hackminecraft.triggerbot": "Toggle Triggerbot",
+  "key.hackminecraft.auto_respawn": "Toggle Auto Respawn",
+  "key.hackminecraft.hud": "Toggle Coordinates and Radar HUD",
+  "key.hackminecraft.anti_afk": "Toggle Anti-AFK"
+}
